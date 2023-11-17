@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Movie from './components/Movie/Movie';
 import Cart from './components/Cart/Cart';
 import { getWatchTimeFromDb, setWatchTimeInDb } from './utilities/fakeDb';
+import Form from './components/Form/Form';
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -57,6 +58,9 @@ function App() {
             <Cart watchTimes={watchTimes} handleBreakTime={handleBreakTime}></Cart>
           </div>
         </div>
+      </section>
+      <section className='bg-primary'>
+        <Form></Form>
       </section>
       <ToastContainer />
     </>
