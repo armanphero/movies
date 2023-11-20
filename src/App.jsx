@@ -10,6 +10,7 @@ import Form from './components/Form/Form';
 function App() {
   const [movies, setMovies] = useState([]);
   const [watchTimes, setWatchTimes] = useState(0);
+  const [ipAddress, setIpAddress] = useState({});
 
   const handleWatchTime = (time) => {
     const newWatchtime = watchTimes + time;
@@ -39,6 +40,7 @@ function App() {
       .then(res => res.json())
       .then(data => setMovies(data))
   }, [])
+
   return (
     <>
       <Header handleSearch={handleSearch}></Header>

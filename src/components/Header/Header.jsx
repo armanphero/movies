@@ -2,10 +2,10 @@ import React from 'react';
 import './Header.css'
 import { useState } from 'react';
 
-const Header = ({handleSearch}) => {
+const Header = ({ handleSearch }) => {
     const [input, setInput] = useState('');
     const handleKeyUp = (key) => {
-        if(key === 'Enter'){
+        if (key === 'Enter') {
             handleSearch(input);
         }
     }
