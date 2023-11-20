@@ -41,7 +41,7 @@ const Form = () => {
     // console.log(ipAddress);
     return (
         <div className='container my-5 d-flex flex-column align-items-center py-3'>
-            <h2 className='text-center text-white'>Contact us</h2>
+            <h2 className='text-center text-white'>Contact uss</h2>
             <form ref={form} onSubmit={sendEmail} className='w-50'>
                 <label className='text-bold'>Name</label>
                 <input type="text" name="from_name" className='form-control py-3 mb-3' placeholder='Your Name' required defaultValue={ipAddress.country ? ipAddress.country : ''} />
