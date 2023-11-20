@@ -38,7 +38,7 @@ const Form = () => {
         // }, 4000);
     }, [])
 
-    console.log(ipAddress);
+    // console.log(ipAddress);
     return (
         <div className='container my-5 d-flex flex-column align-items-center py-3'>
             <h2 className='text-center text-white'>Contact uss</h2>
